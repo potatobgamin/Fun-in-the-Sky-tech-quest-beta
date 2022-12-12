@@ -7,5 +7,261 @@
 	icon: "immersiveengineering:storage_steel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			title: "welcome to mekanism!"
+			icon: "mekanism:metallurgic_infuser"
+			x: 9.0d
+			y: 4.5d
+			description: ["welcome to mekanism, the techiest (if thats even a word) pack on the block!"]
+			id: "4AF3A1AE18AC3201"
+			tasks: [
+				{
+					id: "4F678A92E7720D6D"
+					type: "item"
+					item: "mekanism:metallurgic_infuser"
+				}
+				{
+					id: "4FC69BA2AA42E3FB"
+					type: "item"
+					item: "mekanism:ingot_osmium"
+				}
+			]
+			rewards: [
+				{
+					id: "250804CA347D5021"
+					type: "random"
+					table_id: 5818872724677911183L
+				}
+				{
+					id: "66FAF8DA17C9FBF2"
+					type: "command"
+					command: "/say @p has started mekanism! yay!"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "baby's first soldering project"
+			x: 8.0d
+			y: 3.0d
+			subtitle: "what is this, seaperch?"
+			description: ["the first level of curcuits for mekanism"]
+			dependencies: ["4AF3A1AE18AC3201"]
+			id: "1D95343875538B3A"
+			tasks: [{
+				id: "7F1EA281441A1BB1"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 4.5d
+			id: "4EF246520C26B811"
+			tasks: [{
+				id: "2276488489C20EC0"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			title: "spherical!"
+			x: 10.0d
+			y: 3.0d
+			subtitle: "ill alloy it"
+			dependencies: ["4AF3A1AE18AC3201"]
+			id: "4BFC3FDD92A9008C"
+			tasks: [{
+				id: "438887861CE67411"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+			rewards: [{
+				id: "460BAAC6F62A7F1C"
+				type: "loot"
+				table_id: 5818872724677911183L
+			}]
+		}
+		{
+			title: "baby's SECOND soldering project"
+			x: 9.0d
+			y: 1.0d
+			subtitle: "everyone who has used a soldering iron has burned themselves on it at least once"
+			description: ["the 2nd tier of circuits"]
+			dependencies: [
+				"1D95343875538B3A"
+				"4BFC3FDD92A9008C"
+			]
+			id: "40159B685500395E"
+			tasks: [{
+				id: "3B95E4DF663170F7"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			title: "R678246..."
+			x: 9.0d
+			y: 3.0d
+			dependencies: ["1D95343875538B3A"]
+			optional: true
+			id: "300BD97F93FD5897"
+			tasks: [{
+				id: "2DDD2AD62553B186"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+		}
+		{
+			title: "calling reinforcements!"
+			x: 11.5d
+			y: 1.0d
+			subtitle: "im not alloying it this time bozo!"
+			dependencies: ["4BFC3FDD92A9008C"]
+			id: "4DBD76F73AE4733F"
+			tasks: [{
+				id: "4AFE54F2B8A878BD"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			title: "steeling your heart"
+			x: 9.0d
+			y: 6.5d
+			subtitle: "\"you wanna make the machines? sing.\" "
+			description: [
+				""
+				""
+			]
+			dependencies: ["4AF3A1AE18AC3201"]
+			id: "57F7083AE51BF2AC"
+			tasks: [
+				{
+					id: "4C220D053991114E"
+					type: "item"
+					item: "mekanism:dust_steel"
+				}
+				{
+					id: "73002A256FCB5436"
+					type: "item"
+					item: "mekanism:ingot_steel"
+				}
+				{
+					id: "0BC2915D742EFE23"
+					type: "item"
+					item: "mekanism:steel_casing"
+				}
+			]
+		}
+		{
+			title: "building a computer for god himself "
+			x: 9.0d
+			y: -2.0d
+			shape: "octagon"
+			subtitle: "aw hell nah bruh why dey makin a circuit foh je sus"
+			dependencies: [
+				"1E22F03CE1F551A0"
+				"1C8EF474D1FE0F3E"
+			]
+			size: 2.0d
+			id: "4A5D0D1E56DE7E1B"
+			tasks: [{
+				id: "29114F0AEDD2494D"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			title: "our two detour"
+			x: 6.5d
+			y: 1.0d
+			subtitle: "this quest was made by 2nd decade cat"
+			dependencies: [
+				"40159B685500395E"
+				"4BFC3FDD92A9008C"
+			]
+			id: "4204B0F36465FCEE"
+			tasks: [{
+				id: "17D6E7EBD45D9FFD"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+		}
+		{
+			title: "intermediate solderiing!"
+			x: 10.0d
+			y: 0.0d
+			subtitle: "hows THAT for being a baby, huh?"
+			dependencies: [
+				"40159B685500395E"
+				"4DBD76F73AE4733F"
+			]
+			id: "1C8EF474D1FE0F3E"
+			tasks: [{
+				id: "18D245763AA551D3"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			title: "alloy 2, atomic boogaloo"
+			x: 11.5d
+			y: -3.0d
+			subtitle: "NOT the nuclear kind"
+			dependencies: ["4DBD76F73AE4733F"]
+			id: "1E22F03CE1F551A0"
+			tasks: [{
+				id: "54C9122B2E93512C"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			title: "bringing the heat.. into the machine to make power"
+			x: 9.0d
+			y: 8.5d
+			subtitle: "powah! wait, wrong mod"
+			dependencies: ["57F7083AE51BF2AC"]
+			id: "50B8CDEEDF4084E5"
+			tasks: [{
+				id: "5D5491EC07567FF5"
+				type: "item"
+				item: "mekanismgenerators:heat_generator"
+			}]
+		}
+		{
+			title: "beep boop boo beep boop"
+			x: 6.0d
+			y: -1.0d
+			subtitle: "upgrades, people, upgrades"
+			dependencies: [
+				"4DBD76F73AE4733F"
+				"1C8EF474D1FE0F3E"
+			]
+			id: "4DADFCB4D24039EA"
+			tasks: [{
+				id: "7733E51EEBDAFFED"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+		}
+		{
+			title: "beep boob 2.0"
+			x: 7.0d
+			y: -3.5d
+			subtitle: "more upgrades!"
+			dependencies: [
+				"4A5D0D1E56DE7E1B"
+				"1E22F03CE1F551A0"
+			]
+			id: "27BEA1AD1F97B348"
+			tasks: [{
+				id: "42CF43C29A9D4EE3"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+		}
+	]
 }
