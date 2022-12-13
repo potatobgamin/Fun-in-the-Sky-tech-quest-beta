@@ -1,0 +1,47 @@
+{
+	id: "69DFDB2B13424E9A"
+	group: "1C1B0EC3123248BC"
+	order_index: 0
+	filename: "me_and_the_bois_getting_cereal_at_3_am_fluids"
+	title: "me and the bois getting cereal at 3 am (fluids)"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -0.5d
+			id: "05456BDC46231D3D"
+			tasks: [{
+				id: "43BAB412C43468B3"
+				type: "fluid"
+				title: "\"i like to drink bulls milk for equality\" random person on twitter"
+				fluid: "minecraft:flowing_milk"
+				amount: 10000L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			id: "57966F105E13621A"
+			tasks: [{
+				id: "0E0325E9EF174431"
+				type: "fluid"
+				title: "spicy orange juice"
+				fluid: "minecraft:flowing_lava"
+				amount: 10000L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			id: "2CED649DF2A2623B"
+			tasks: [{
+				id: "06E3A735C604AF9C"
+				type: "fluid"
+				title: "wharrgarbl"
+				fluid: "minecraft:water"
+				amount: 10000L
+			}]
+		}
+	]
+}
