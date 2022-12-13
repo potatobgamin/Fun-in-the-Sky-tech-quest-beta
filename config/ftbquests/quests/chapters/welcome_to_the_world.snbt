@@ -250,7 +250,7 @@
 			title: "Advanced"
 			x: 5.0d
 			y: -1.5d
-			subtitle: "Wumbo"
+			subtitle: "Harder than... rock!"
 			description: ["Metal tool parts can only be made through the Meltery/Smeltery."]
 			dependencies: [
 				"66C14B2AA65C2AF6"
@@ -258,7 +258,7 @@
 			]
 			id: "76E94BBBF2AE7446"
 			tasks: [{
-				id: "1123E3DFB61D3C8E"
+				id: "08B5E619863B7F0C"
 				type: "item"
 				item: {
 					id: "tconstruct:pickaxe_head"
@@ -308,7 +308,7 @@
 					item: "tconstruct:seared_faucet"
 				}
 				{
-					id: "5DB007296A573EE1"
+					id: "24F87F877038068F"
 					type: "item"
 					item: "tconstruct:seared_heater"
 				}
@@ -326,7 +326,10 @@
 			y: 0.0d
 			subtitle: "Advanced Darkness"
 			description: ["The famous Smeltery is built in any way as long as the floor is a non-functional Seared block, and the sides are made up as functional blocks or regular ones. You will require some extra things to get this to work."]
-			dependencies: ["66C14B2AA65C2AF6"]
+			dependencies: [
+				"66C14B2AA65C2AF6"
+				"0A069650B793FCAE"
+			]
 			id: "7D3E3033DAECC8D5"
 			tasks: [
 				{
@@ -570,13 +573,21 @@
 			x: 10.0d
 			y: 2.5d
 			subtitle: "Water we waiting for?"
-			description: ["Any Wooden crucible can be used to make Water, and possibly some other things..."]
+			description: ["Any Wooden crucible can be used to make Water."]
 			dependencies: ["151BA5F11D763A60"]
 			id: "335DC1FD12424DF4"
 			tasks: [{
 				id: "6B59B0B54FBF6831"
 				type: "item"
-				item: "exnihilosequentia:crucible_wood"
+				title: "Any Wooden Crucible"
+				icon: "exnihilosequentia:crucible_wood"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:crucibles"
+					}
+				}
 			}]
 		}
 		{
@@ -645,6 +656,75 @@
 				type: "item"
 				item: "exnihilosequentia:bucket_witchwater"
 			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			subtitle: "Hulk Smash!"
+			description: ["The Mighty Smelting book will teach you how to construct a Smeltery, and will also show how to make Tier 3 Tools."]
+			dependencies: ["6B1BD9D2E4155D32"]
+			id: "0A069650B793FCAE"
+			tasks: [{
+				id: "4FC8683C4AE04C67"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
+		}
+		{
+			icon: "tconstruct:fantastic_foundry"
+			x: 9.0d
+			y: -5.0d
+			subtitle: "I'm very nethervous"
+			description: ["If you really want to, you can make a Foundry, same concept as a Smeltery, but made with Nether materials."]
+			dependencies: [
+				"6B1BD9D2E4155D32"
+				"0A069650B793FCAE"
+			]
+			optional: true
+			id: "527E286E406274C5"
+			tasks: [
+				{
+					id: "09A33CAA2E0B2A78"
+					type: "item"
+					item: "tconstruct:fantastic_foundry"
+				}
+				{
+					id: "13FF090E2B7B1871"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+				{
+					id: "51F78F4B90BE5BC4"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 4L
+				}
+				{
+					id: "44D88CDA24219E9B"
+					type: "item"
+					item: "tconstruct:scorched_drain"
+				}
+				{
+					id: "06A795F69031A760"
+					type: "item"
+					item: "tconstruct:scorched_faucet"
+				}
+				{
+					id: "4F2C4EF6A99E6C43"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+				{
+					id: "2E0BEEB6A71EADC0"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+				{
+					id: "23CB1EFD78D1C108"
+					type: "item"
+					item: "tconstruct:scorched_fuel_tank"
+				}
+			]
 		}
 	]
 }
